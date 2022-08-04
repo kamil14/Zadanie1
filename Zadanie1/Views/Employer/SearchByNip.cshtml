@@ -1,0 +1,35 @@
+﻿@model Zadanie1.Models.Employer
+
+@{
+
+}
+
+<h1>Przedsiębiorca</h1>
+
+
+<div>
+    @Html.DisplayFor(modelItem => Model.Name)
+</div>
+<div>
+    @Html.DisplayFor(modelItem => Model.Nip)
+</div>
+<div>
+    @Html.DisplayFor(modelItem => Model.StatusVat)
+</div>
+<div>
+    @Html.DisplayFor(modelItem => Model.Regon)
+</div>
+<div>
+    @Html.DisplayFor(modelItem => Model.ResidenceAddress)
+</div>
+<div>
+    @Html.DisplayFor(modelItem => Model.RegistrationLegalDate)
+</div>
+
+<div>
+    <a asp-action="Index" style="color:black">Powrót</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
